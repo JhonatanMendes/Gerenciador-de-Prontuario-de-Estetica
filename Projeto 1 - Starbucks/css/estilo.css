@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Define a largura da página */
+.conteudo{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.linha{
+    height: 10px;
+    background-color: #006442;
+}
+
+/* ### INICIO DO CABEÇALHO ####### */
+/* define a largura do cabeçalho e organiza as div */
+.conteudo-header{
+    max-width: 1000px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lado-esq img{
+    width: 70px;
+}
+.lado-dir{
+    display: flex;
+    align-items: center;
+}
+.pesquisa form{
+    display: flex;
+    align-items: center;
+}
+.pesquisa input{
+    padding: 8px;
+    font-size: 15px;
+    width: 100%;
+    max-width: 200px;
+    outline: 0;
+}
+.pesquisa img{
+    width: 20px;
+    height: 20px;
+    margin-left: -23px;
+    cursor: pointer;
+}
+.menu img{
+    width: 42px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+/* ### FINAL DO CABEÇALHO ####### */
+
+/* ### INICIO DAS SESSÕES ####### */
+/* define a largura das sessões */
+.conteudo-section{
+    max-width: 1080px;
+    margin:  auto;
+}
+
+/* inicia a estilização do banner */
+.banner{
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 90px 0;
+    padding-left: 60px;
+}
+.banner-itens img{
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid #006442;
+    margin-right: 40px;
+}
+h1{
+    font-size: 80px;
+    line-height: 90px;
+    margin: 0;
+}
+.banner p{
+    margin: 60px 0;
+}
+
+/* CONTEUDO DO SITE ################ */
+/* PARTE 01 ######################## */
+
+/* agrupamento de estilo */
+.parte-1,
+.parte-2,
+.parte-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.linha-pequena{
+    height: 15px;
+    width: 150px;
+    background-color: #006442;
+    margin-bottom: 20px;
+}
+h2{
+    font-size: 30px;
+    line-height: 35px;
+    margin: 0;
+}
+/* agrupamento de estilo */
+.p1-area-1 p,
+.p2-area-1 p,
+.p3-area-1 p,
+.p4-area-1 p{
+    color: #555;
+    margin-bottom: 30px;
+}
+.botao{
+    display: inline-block;
+    padding: 15px;
+    border: 1px solid #555;
+    text-decoration: none;
+    color: #555;
+    margin-top: 20px;
+}
+.botao:hover{
+    color: white;
+    background-color: #555;
+}
+.p1-area-1{
+    max-width: 450px;
+    padding: 60px 0;
+    padding-left: 60px;
+}
+.p1-area-2{
+    background-image: url(../img/f2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+.p1-area-3{
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    background-image: url(../img/f1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* PARTE 02 ######################## */
+.p2-area-1{
+    padding: 80px 0;
+    padding-left: 60px;
+    max-width: 500px;
+}
+.p2-area-2{
+    background-image: url(../img/f4.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+}
+.p2-area-3{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-image: url(../img/f3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* PARTE 03 ########################### */
+
+.p3-area-1{
+    padding: 180px 0;
+    padding-left: 60px;
+    background-image: url(../img/bg2.jpg);
+    background-position: left;
+    background-size: cover;
+    max-width: 450px;
+}
+.p3-area-2{
+    background-image: url(../img/f5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* PARTE 04 ###################### */
+.parte-4{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.p4-area-1{
+    padding: 140px 0;
+    padding-left: 60px;
+    background-color: #e8e9ee;
+}
+.p4-area-2{
+    background-image: url(../img/bg3.jpg);
+    background-position: left;
+    background-size: cover;
+}
+
+/* PARTE 05 ############################# */
+.parte-5{
+    background-image: url(../img/bg4.jpg);
+    background-position: right;
+    background-size: cover;
+    height: 550px;
+}
+/* ### FINAL DAS SESSÕES ####### */
+
+/* ### INICIO DO RODAPÉ ####### */
+footer{
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 170px;
+}
+footer p{
+    color: white;
+    text-align: center;
+    margin: 15px 0;
+}
+/* ### FINAL DO RODAPÉ ####### */
+
+/* ### ADAPTAÇÃO PARA NOTEBOOK ####### */
+@media screen and (min-width: 769px) and (max-width: 1020px){
+    .conteudo-header{
+        margin: 0 20px;
+    }
+    .p1-area-1,
+    .p2-area-1,
+    .p3-area-1{
+        padding-right: 20px;
+    }
+}
+
+/* ### ADAPTAÇÃO PARA TABLET ####### */
+@media screen and (min-width: 551px) and (max-width: 768px){
+    .conteudo-header{
+        margin: 0 20px;
+    }
+    .p1-area-1,
+    .p2-area-1,
+    .p3-area-1,
+    .p4-area-1{
+        padding: 60px;
+        padding-left: 25px;
+        padding-right: 15px;
+    }
+    .p1-area-2,
+    .p2-area-2{
+        height: 240px;
+    }
+    .banner{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    h1{
+        font-size: 50px;
+        line-height: 60px;
+        margin: 0;
+    }
+    .banner p{
+        margin: 50px 0;
+        max-width: 400px;
+    }
+    .banner-itens img{
+        width: 100px;
+        border-radius: 50%;
+        border: 5px solid green;
+        margin-right: 40px;
+    }
+    .parte-5{
+        height: 270px;
+    }
+}
+
+/* ### ADAPTAÇÃO PARA CELULAR ####### */
+@media screen and (max-width: 550px){
+    .conteudo-header{
+        margin: 0 20px;
+    }
+    .menu img{
+        width: 42px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+    .pesquisa input{
+        margin-left: 20px;
+    }
+
+    h1{
+        font-size: 40px;
+        line-height: 50px;
+        margin: 0;
+    }
+    .banner p{
+        margin: 50px 0;
+        max-width: 400px;
+    }
+    .banner-itens img{
+        width: 70px;
+        border-radius: 50%;
+        border: 5px solid green;
+        margin-right: 20px;
+    }
+
+    .banner,
+    .p1-area-1,
+    .p2-area-1,
+    .p3-area-1,
+    .p4-area-1{
+        padding: 40px;
+        padding-left: 20px;
+        padding-right: 15px;
+    }
+
+    .p1-area-3,
+    .p2-area-3{
+        display: none;
+    }
+
+    .parte-1,
+    .parte-2,
+    .parte-3{
+        grid-template-columns: none;
+    }
+
+    .parte-4{
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .parte-5{
+        height: 250px;
+    }
+
+    footer{
+        height: 100px;
+    }
+    footer p{
+        margin: 7px 0;
+        font-size: 14px;
+    }
+}
